@@ -1,13 +1,70 @@
-:root {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: linear-gradient(-45deg, #00c1df, #0028ff, #000428, #000428, #004e92);
+  /* background: linear-gradient(-45deg, rgba(255, 0, 0, 0.722), #03061f, rgba(255, 0, 0, 0.722), #000428, rgba(255, 0, 0, 0.722)); */
+  background-size: 125% 125%;
+  animation: gradient 10s ease infinite;
+  -moz-animation: gradient 10s ease infinite;
+  -webkit-animation: gradient 10s ease infinite;
+  -o-animation: gradient 10s ease infinite;
+  -ms-animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+main{
+  padding-top: 50px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-}
+  -moz-osx-font-smoothing: grayscale;
+} */
 
 
 

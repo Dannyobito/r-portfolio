@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(37, 40, 57, 0.9);
+    box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100vw;
+    opacity: 100%;
+  
+    /* For navbar hiding(Scroll Down)/display(Scroll Up)  */
+    transition: top 0.3s;
+  }
+  .nav-links{
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 1.5rem;
+  }
+.navbar-brand {
+    color: rgba(255, 0, 0, 0.722);
+    font-size: 2.6rem;
+    font-weight: bolder;
+    padding: 0px 10px;
+  }
+  
+  .navbar-brand:link,
+  .navbar-brand:visited {
+    color: rgb(227, 18, 18);
+    text-decoration: solid;
+  }
+  
+  .navbar-brand:hover,
+  .navbar-brand:active {
+    color: rgba(255, 0, 0, 0.48);
+    text-decoration: solid;
+  }
+
+
+@media only screen and (max-width:600px) {
+  nav .ion {
+    display: block;
+    font-size: 25px;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+    background: rgb(255, 0, 0);
+    position: fixed;
+    top: 0;
+    /* right: -200px; */
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+.close{
+  right: -200px;
+}
+.open{
+  right: 0px;
+}
+.nav-links .nav-link {
+    display: block;
+    margin: 25px;
+    border: rgba(0, 0, 0, 0.267);
+    transition: 0.5s;
+}
+.nav-links .nav-link:hover{
+    scale: 1.1;
+}
+.nav-links .ion {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+}
