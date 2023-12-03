@@ -5,7 +5,7 @@ import './About.css'
 const About = () => {
   const [activeAboutTab, setActiveAboutTab] = useState('skills')
   return (
-    <section>
+    <section name="about">
         <div className="about-container">
         <h1 className="sub-title">About Me</h1>
 
@@ -14,7 +14,7 @@ const About = () => {
                     <span><img src={myImage} alt=""/></span>
                 </div>
                 <div className="about-col-2">
-                    <div>
+                    <div className='sm-padding'>
 
                         <div className="tab-titles">
                             <p className={`tab-links ${activeAboutTab === 'skills' ? 'active-link' : ''}`} onClick={()=>{setActiveAboutTab('skills')}}>Skills</p>

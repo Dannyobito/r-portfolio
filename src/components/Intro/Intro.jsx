@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Link as Liink } from "react-scroll";
 import git from '../../assets/github-icon.svg';
 import gmail from '../../assets/gmail-icon.svg';
 import linkedin from '../../assets/linkedin-icon.svg';
@@ -36,8 +37,12 @@ const Intro = () => {
               <span className="intro-link-icon-text">Email</span>
             </Link>
           </div>
-
-        <a href="#about">
+          
+        <Liink
+          to="about"  
+          smooth={true} 
+          offset={50} 
+          duration={500} >
           <div className="arrow-link">
             <svg className="dropdown-icon" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -45,7 +50,7 @@ const Intro = () => {
               />
             </svg>
           </div>
-        </a>
+        </Liink>
       </div>
     </div>
   )

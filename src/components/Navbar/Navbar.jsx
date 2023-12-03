@@ -9,7 +9,6 @@ const Navbar = () => {
         <div className="nav-links close">
           <Link to={"/"} className="nav-link">Home</Link>
           <Link to={"/projects"} className="nav-link" >My Projects</Link>
-          <Link to={"/contact"} className="nav-link">Contact</Link>
         </div>
       </div>
     </nav>

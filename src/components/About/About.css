@@ -1,3 +1,9 @@
+section{
+    padding-top: 6rem;
+}
+.sm-padding{
+    padding-left: 30px;
+}
 .about-container{
     max-height: 70vh;
     margin-bottom: 4rem;
@@ -62,4 +68,16 @@
 }
 .tab-contents.active-tab {
     display: block;
+}
+@media screen and (max-width: 960px){
+    .row{
+        flex-direction: column;
+    }
+    .about-col-1{
+        display: flex;
+        justify-content: center;
+    }
+    .about-col-2{
+        justify-content: center;
+    }
 }

@@ -1,5 +1,6 @@
 .navbar {
     display: flex;
+    padding: 0 1rem;
     justify-content: space-between;
     align-items: center;
     color: rgb(255, 255, 255);
@@ -39,7 +40,7 @@
   }
 
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:200px) {
   nav .ion {
     display: block;
     font-size: 25px;

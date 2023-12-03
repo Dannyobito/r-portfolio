@@ -11,7 +11,7 @@ body{
   color: white;
   background: linear-gradient(-45deg, #00c1df, #0028ff, #000428, #000428, #004e92);
   /* background: linear-gradient(-45deg, rgba(255, 0, 0, 0.722), #03061f, rgba(255, 0, 0, 0.722), #000428, rgba(255, 0, 0, 0.722)); */
-  background-size: 125% 125%;
+  /* background-size: 125% 125%; */
   animation: gradient 10s ease infinite;
   -moz-animation: gradient 10s ease infinite;
   -webkit-animation: gradient 10s ease infinite;
@@ -34,8 +34,11 @@ a{
   color: #fff;
 }
 main{
-  padding-top: 50px;
   width: 100vw;
+  min-height: 100vh;
+}
+.main-section{
+  padding-top: 50px;
   min-height: 100vh;
 }
 

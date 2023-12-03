@@ -5,7 +5,6 @@ import projects from "./projects";
 import './ProjectsPage.css'
 const ProjectsPage = () => {
   return (
-    <main>
       <section>
         <div className="container">
               <h1 className="sub-title">My Works</h1>
@@ -32,7 +31,6 @@ const ProjectsPage = () => {
               </div>
           </div>
       </section>
-    </main>
   )
 }
 

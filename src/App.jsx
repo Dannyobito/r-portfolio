@@ -8,17 +8,17 @@ import ProjectsPage from './pages/Projects/ProjectsPage'
 function App() {
 
   return (
-    <>
+    <main>
       <Navbar/>
-      <main className='app-body'>
+      <section className='main-section'>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           {/* <Route path="/" element={<HomePage />}/> */}
         </Routes>
-      </main> 
+      </section> 
       <Footer/>
-    </>
+    </main>
   )
 }
 
