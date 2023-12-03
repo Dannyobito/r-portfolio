@@ -4,6 +4,7 @@ const MyStack = () => {
     
   return (
     <section>
+        <h1 className='tc'>My Stack</h1>
         <div className="technologies-container">
           {
             technologies.map((technology,i)=>{

@@ -1,4 +1,7 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import git from '../../assets/github-icon.svg';
+import gmail from '../../assets/gmail-icon.svg';
+import linkedin from '../../assets/linkedin-icon.svg';
 import './Intro.css'
 const Intro = () => {
   return (
@@ -20,18 +23,18 @@ const Intro = () => {
           </div>
 
           <div className="flex-center">
-            <Link className="intro-link-icon-container">
-              <ion-icon name="logo-linkedin" className="intro-link-icons"></ion-icon>
+            <Link to={'https://www.linkedin.com/in/oluwatobi-abayomi'} className="intro-link-icon-container">
+              <img src={linkedin} alt=""  className="intro-link-icons"/>
               <span className="intro-link-icon-text">LinkedIn</span>
             </Link>
-            <Link className="intro-link-icon-container">
-              <ion-icon name="logo-github" className="intro-link-icons"></ion-icon>
+            <Link to="https://github.com/dannyobito" className="intro-link-icon-container">
+              <img src={git} alt="" className="intro-link-icons"/>
               <span className="intro-link-icon-text">Github</span>
             </Link>
-            <a href="#contact" className="intro-link-icon-container">
-              <ion-icon name="mail-outline" className="intro-link-icons"></ion-icon>
+              <Link to="" className="intro-link-icon-container">
+              <img src={gmail} alt="" className="intro-link-icons"/>
               <span className="intro-link-icon-text">Email</span>
-            </a>
+            </Link>
           </div>
 
         <a href="#about">

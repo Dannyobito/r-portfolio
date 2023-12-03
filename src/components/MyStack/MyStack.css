@@ -10,6 +10,9 @@
     margin-top: 8vh;
     padding: 0 2rem;
   }
+  .tc{
+    text-align: center;
+  }
   .center{
     display: flex;
     justify-content: center;
